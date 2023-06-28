@@ -17,6 +17,12 @@ public class Robot extends ProceduralRobot {
   @Override
   public void autonomousProcedure() throws InterruptedException {
     // Write your code here:
-
+    System.out.println("Going forwards for two seconds.");
+    driveTime(0.8, 2);
+    sleepSeconds(0.5);
+    turnTime(-0.5, 1);
+    driveTime(1, 0.5);
+    sleepSeconds(1);
+    
   }
 }
